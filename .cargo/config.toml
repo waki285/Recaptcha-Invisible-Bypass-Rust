@@ -1,0 +1,5 @@
+[target.aarch64-pc-windows-msvc]
+linker = "lld-link.exe"
+rustflags = [
+    "-C", "target-feature=+crt-static"
+]
